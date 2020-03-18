@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Result</h1>
+        <table class="table">
+            <tbody>
+                {% for i in range(labels|length) %}
+                <tr class="{{ "bg-success" if labels[i]==1 }} {{ "bg-danger" if labels[i]==0  }}">
+                    <td>{{ sentences[i] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+{% endblock %}
