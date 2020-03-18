@@ -1,5 +1,5 @@
 # wikipedia-to-news-gui
-## GUI for CS224N Final Project 2020
+## GUI for Stanford CS224N Final Project 2020
 ### Kevin Ji, Juliette Love, Moritz Stephan
 
 This is the GUI for out Fact detector. We trained a CNN model with a stacked Highway gate on news articles relating to wikipedia changes. The focus was on changes that were clear changes, e.g. athletes switching teams. The sentences in the articles that contained the fact were labelled using TF-IDF. This model also makes use of Bert embeddings for enhanced results.  
