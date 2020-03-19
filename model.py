@@ -17,7 +17,7 @@ class Analyzer:
         self.embeddings = DataLoader(transformers.BertModel, transformers.BertTokenizer, embeddings, device)
 
     def analyze(self, text):
-        text = text.split('.')
+        text = text.split('. ')
         text = [t for t in text if len(t) > 0]
         text = [t.strip() for t in text]
         df = pd.DataFrame(text)
